@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #f5f7fa;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: linear-gradient(180deg, #1e3a34, #2f5d4e);
+    color: #fff;
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sidebar-header h2 {
+    font-size: 24px;
+    color: #00e48a;
+}
+
+.sidebar-header p {
+    font-size: 14px;
+    color: #c9e6d2;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 8px 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-left: 4px solid #00e48a;
+    transform: translateX(4px);
+}
+
+.logout {
+    color: #ff8080;
+    margin-top: 20px;
+}
+
+/* Main content */
+.main-content {
+    margin-left: 250px;
+    padding: 40px;
+    width: 100%;
+    color: #333;
+}
+
+.header h1 {
+    font-size: 28px;
+    color: #1e3a34;
+}
+
+.header p {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Dashboard cards */
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.card i {
+    font-size: 40px;
+    color: #00c97e;
+    margin-bottom: 15px;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #1e3a34;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 15px;
+    color: #666;
+    position: fixed;
+    bottom: 0;
+    left: 250px;
+    right: 0;
+    border-top: 1px solid #ddd;
+}
